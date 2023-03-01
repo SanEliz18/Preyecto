@@ -1,0 +1,44 @@
+.btn-ins{
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #861024;
+    width: 250px;
+    border-radius:150px ;
+    height: 50px;
+}
+.enviar{
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #861024;
+    width: 150px;
+    border-radius:150px ;
+    height: 50px;
+}
+.fondo{
+    background: linear-gradiente(#861024, #0000);
+    
+}
+.dato{
+    background-color: #9e9e9e;
+    width: 7cm;
+    height: .6cm;
+    font-size: 16px;
+}
+.sex{
+    background-color: #9e9e9e;
+    width: 5cm;
+    height: .6cm;
+    font-size: 16px;
+}
+.letra{
+    font-size: .6cm
+}
+.ins{
+    font-size: 1.2cm;
+    background-color: #861024;
+    color:#ffffff;
+}
