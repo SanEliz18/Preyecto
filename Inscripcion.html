@@ -2,33 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
     <title>UNIVERSIDAD</title>
     <link rel="stylesheet" href="estilos.css">
-    <link href="loging.js">
+    
+    
     <body class="bd">
 
-        <center><h1 class="ins">INSCRIPCIÓN</h1><img src="Logo.png" width="100" height="90">
+        <center><h1 class="ins">INSCRIPCIÓN</h1><img src="Logo.png" width="90" height="85">
             </center>
         <div class="ins"> </div>
         <center><a class="letra"> Nombre<br>
             <input class="dato" id="nombre"></a>
+
         <a class="letra"><br>Apellido<br>
             <input class="dato" id="apellido"></a>
+
+        <a class="letra"><br>Dirección<br>
+            <input class="dato" id="direccion"></a>
+
+        <a class="letra"><br>Teléfono<br>
+        <input type="number" class="dato" id="phone"></a>
+
         <a class="letra"><br>Correo<br>
             <input class="dato" id="correo"></a>
-        <a class="letra"><br>curp<br>
-            <input class="dato" id="curp"></a>
-        <a class="letra"><br>Sexo<br>
-            <select class="sex" nombre="Sexo" id="sx">
-                <option>Elija una opción</option>
-                <option>Femenino</option>
-                <option>Masculino</option>
-                <option>Otro</option>
-            </select></a></center><br><br>
-            <div style="text-align: center;">
-        <button class="enviar" style="color:white"><strong>Enviar</strong></button></div>
+
+        <a class="letra"><br>NSS<br>
+        <input type="number" class="dato" id="nss"></a>
+
+        <a class="letra"><br>Responsable<br></a>
+        <input class="dato" id="tutor"></a>
+
+        <a class="letra"><br>Fecha de nacimiento<br>
+        <input class="dato" id="date" type="date"><br></a>
+            
+        <br><div style="text-align: center;">
+        <button class="enviar" style="color:white" onclick="borrar()"><strong>Cancelar</strong></button>
+        <button id="sent" class="enviar" style="color:white" onclick="guardar()"><strong>Enviar</strong></button>
+        <script>
+    function borrar(){
+     
+      location.href ="inscripcion.html";
+ }
+ 
+ function guardar(){
+    let nom = document.getElementById('nombre');
+    let ap= document.getElementById('apellido');
+    let dir= document.getElementById('direccion');
+    let tel = document.getElementById('phone');
+    let correo = document.getElementById('correo');
+    let nss = document.getElementById('nss');
+    let res = document.getElementById('tutor');
+    let fecha = document.getElementById("date");
+    
+    let g = [];
+    
+    localStorage.setItem("Usuario", JSON.stringify( g1=[nom.value, ap.value, dir.value, tel.value, correo.value, nss.value, res.value, fecha.value]));
+
+ }
+        </script>
+        </div>
+        
+    
     </body>
 </html>

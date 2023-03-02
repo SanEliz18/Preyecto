@@ -2,20 +2,19 @@ class Persona {
     #id;
     Nombre;
     Apellidos;
-    F_nacimiento;
-    constructor(nombre, apellidos, fecha){
+    curp = [20];
+    correo;
+    contraseña;
+    constructor(nombre, apellidos, curp, correo, contraseña){
         this.Nombre =  nombre;
         this.Apellidos = apellidos;
-        this.F_nacimiento =  fecha;
+        this.curp = curp;
+        this.correo;
+        this.contraseña = contraseña;
         //this.#id = this.#crearId();
     }
 
-    calcularEdad =  function(){
-        let fecha = new Date();
-        let edad = fecha.getFullYear() - this.F_nacimiento.getFullYear();
-        return edad;
-    }
-
+    
     /**
      * 
      * @returns {Int}
