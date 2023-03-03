@@ -57,9 +57,10 @@
     let res = document.getElementById('tutor');
     let fecha = document.getElementById("date");
     
-    let g = [];
     
-    localStorage.setItem("Usuario", JSON.stringify( g1=[nom.value, ap.value, dir.value, tel.value, correo.value, nss.value, res.value, fecha.value]));
+    usu = [nom.value, ap.value, dir.value, tel.value, correo.value, nss.value, res.value, fecha.value];
+    
+    localStorage.setItem("Usuario", JSON.stringify(usu));
 
  }
         </script>

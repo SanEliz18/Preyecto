@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-    <title>UNIVERSIDAD</title>
-    <link rel="stylesheet" href="estilos.css">
-    <body ><br><br><br><br>
-        <center><img src="Logo.png" width="250" height="200"></center>
-        <h1 style=" color:#861024; font-size:7" align="center" >UNIVERSIDAD DE TECÁMAC DEL ESTADO DE MÉXICO</h1>
-        <center><h2 style="font:arial; font-size:7"><strong>¡BIENVENIDO!</strong></h2></center>
-        
-        <div style="text-align: center;"><br><br>
-            <a href="inscripcion.html">
-        <button  style="color: white;" class="btn-ins" id="btn-inc" ><strong>INSCRIPCIÓN</strong></button><br><br>
-        </a>
-        <div>
-            <a href="reinscripcion.html">
-        <button style="color: white;" class="btn-ins" id="btn-rei"><strong>REINSCRIPCIÓN</strong></button><br><br>
-        </a>
-        </div>
-        <div>
-            <a href="validación.html">
-        <button style="color: white;" class="btn-ins" id="btn-rei"><strong>ingresar</strong></button><br><br>
-        </a>
-        </div>
-    </div>
-    </body>
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Tira de Materias</title>
+    <title> Sistema Tira de Materias</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Sistema de Tira de Materias</a>
+        <a class="navbar-brand" href="#">Tira de Materias</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
+                    <a class="nav-link" href="#">inicio </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Alumnos</a>
@@ -71,32 +39,28 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Grupos</a>
                 </li>
             </ul>
 
         </div>
     </nav>
     <div class="container mt-5">
-        <div class="alert alert-warning" role="alert">
-            Esto es una prueba para la materia de POO
-        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="text-center">Carreras</h4>
+                        <h4 class="text-center">Carrera</h4>
                     </div>
                     <div class="card-body">
 
                         <div class="form-group">
-                            <label for="name">Nombre</label>
+                            <label for="name">Nombre </label>
                             <input class="form-control" name="name" id="name" placeholder="Ingrese su nombre(s)">
 
                         </div>
                         <div>
                             <label for="generation">Generación</label>
-                            <input class="form-control" type="text" name="generation" id="generation" value="20">
+                            <input class="form-control" type="text" name="generation" id="generation" value=" ">
                         </div>
 
                         <button class="btn btn-secondary" onclick="guardarCarrera()">Guardar</button>
@@ -104,28 +68,6 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="text-center">Crear Grupos</h4>
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <label for="name-group">Nombre</label>
-                            <input class="form-control" type="text" name="name-group" id="name-group" value="4223IS">
-                        </div>
-                        <div>
-                            <label for="aula">Aula</label>
-                            <input class="form-control" type="text" name="aula" id="aula" value="30">
-                        </div>
-                        <div>
-                            <label for="carrera">Carrera</label>
-                            <select class="form-control form-select" name="carrera" id="carrera">
-
-                            </select>
-                        </div>
-                        <button class="btn btn-primary" onclick="crearGrupo()">Guardar</button>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -135,30 +77,30 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="text-center">Agregar Alumnos</h4>
+                        <h4 class="text-center"> Alumnos</h4>
                     </div>
                     <div class="card-body">
                         <div>
                             <label for="name">Nombre</label>
                             <input class="form-control" type="text" name="name-student" id="name-student"
-                                value="Sandra">
+                                value=" ">
                         </div>
 
                         <div>
                             <label for="lastname">Apellidos</label>
-                            <input class="form-control" type="text" name="lastname" id="lastname" value="Sanchez Lopez">
+                            <input class="form-control" type="text" name="lastname" id="lastname" value=" ">
                         </div>
                         <div>
-                            <label for="date">fecha de nacimiento</label>
-                            <input class="form-control" type="date" name="date" id="date" value="2004/02/18">
+                            <label for="date">Fecha de nacimiento</label>
+                            <input class="form-control" type="date" name="date" id="date" value=" ">
                         </div>
                         <div>
-                            <label for="matricula">matricula</label>
-                            <input class="form-control" type="text" name="matricula" id="matricula" value="89234892374">
+                            <label for="matricula">Matricula</label>
+                            <input class="form-control" type="text" name="matricula" id="matricula" value=" ">
                         </div>
                         <div>
                             <label for="nss">NSS</label>
-                            <input class="form-control" type="number" name="nss" id="nss" value="76348234">
+                            <input class="form-control" type="number" name="nss" id="nss" value=" ">
                         </div>
 
                         <button class="btn btn-primary" onclick="guardarAlumno()">Guardar</button>
@@ -169,31 +111,19 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="text-center">Inscribir Alumnos</h4>
+                        <h4 class="text-center">Cuatrimestre a cursar</h4>
                     </div>
                     <div class="card-body">
                         <div>
-                            <label for="students">Seleccione el alumno</label>
+                            <label for="students">Seleccione cuatrimestre </label>
                             <select class="form-control form-select" name="students" id="students">
 
                             </select>
                         </div>
-                        <div>
-                            <label for="groups">Seleccione el Grupo</label>
-                            <select class="form-control form-select" name="groups" id="groups">
-
-                            </select>
-                        </div>
-                        <button class="btn btn-primary" onclick="asignarAlumnoaGrupo()">
-                            Asignar Grupo
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
@@ -204,10 +134,8 @@
     <script src="Alumno.js"></script>
     <script src="Docente.js"></script>
     <script src="Carrera.js"></script>
-    <script src="Grupo.js"></script>
     <script src="Asignatura.js"></script>
     <script src="main.js"></script>
 </body>
 
->>>>>>> ab3ecd2793c73025f9eaa5da785d009c9e7d7dd8
 </html>
