@@ -40,32 +40,16 @@
             
         <br><div style="text-align: center;">
         <button class="enviar" style="color:white" onclick="borrar()"><strong>Cancelar</strong></button>
-        <button id="sent" class="enviar" style="color:white" onclick="guardar()"><strong>Enviar</strong></button>
+        <button id="sent" class="enviar" style="color:white" onclick="registrasUsuario()"><strong>Enviar</strong></button>
+        
         <script>
     function borrar(){
      
       location.href ="inscripcion.html";
- }
- 
- function guardar(){
-    let nom = document.getElementById('nombre');
-    let ap= document.getElementById('apellido');
-    let dir= document.getElementById('direccion');
-    let tel = document.getElementById('phone');
-    let correo = document.getElementById('correo');
-    let nss = document.getElementById('nss');
-    let res = document.getElementById('tutor');
-    let fecha = document.getElementById("date");
-    
-    
-    usu = [nom.value, ap.value, dir.value, tel.value, correo.value, nss.value, res.value, fecha.value];
-    
-    localStorage.setItem("Usuario", JSON.stringify(usu));
-
- }
-        </script>
+ }</script>
         </div>
-        
-    
+        <script src="Alumno.js"></script>
+        <script src="Heper.js"></script>
+        <script src="registrar.js"></script>
     </body>
 </html>

@@ -1,17 +1,21 @@
-<<<<<<< HEAD
 class Persona {
     #id;
     Nombre;
     Apellidos;
-    curp = [20];
     correo;
-    contraseña;
+    F_nacimiento;
+    Dirección;
+    Télefono;
+    Nss;
+
     constructor(nombre, apellidos, curp, correo, contraseña){
-        this.Nombre =  nombre;
-        this.Apellidos = apellidos;
-        this.curp = curp;
-        this.correo;
-        this.contraseña = contraseña;
+    let nom = document.getElementById('nombre');
+    let ap= document.getElementById('apellido');
+    let dir= document.getElementById('direccion');
+    let tel = document.getElementById('phone');
+    let correo = document.getElementById('correo');
+    let nss = document.getElementById('nss');
+    let fecha = document.getElementById("date");
         //this.#id = this.#crearId();
     }
 
@@ -24,18 +28,6 @@ class Persona {
         let name =  this.Nombre;
         return  name.charAt(0) + Math.floor(Math.random() * 1000);
     }
-=======
-class Persona {
-    #id;
-    Nombre;
-    Apellidos;
-    F_nacimiento;
-    constructor(nombre, apellidos, fecha){
-        this.Nombre =  nombre;
-        this.Apellidos = apellidos;
-        this.F_nacimiento =  fecha;
-        //this.#id = this.#crearId();
-    }
 
     calcularEdad =  function(){
         let fecha = new Date();
@@ -43,13 +35,4 @@ class Persona {
         return edad;
     }
 
-    /**
-     * 
-     * @returns {Int}
-     */
-    #crearId= function(){
-        let name =  this.Nombre;
-        return  name.charAt(0) + Math.floor(Math.random() * 1000);
-    }
->>>>>>> ab3ecd2793c73025f9eaa5da785d009c9e7d7dd8
 }
