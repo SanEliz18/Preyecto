@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<link rel="stylesheet" href="estilos.css">
+  <body>
+    <center><h1 class="ins">INSCRIPCIÓN</h1><img src="Logo.png" width="90" height="85">
+    </center>
+    <center>
+    <form id="formulario">
+      <label for="nombre" class="letra">Nombre:</label><br>
+      <input class="dato" type="text" id="nombre" name="nombre" required><br>
+      
+      <br><label for="apellidos" class="letra">Apellidos:</label><br>
+      <input class="dato" type="text" id="apellidos" name="apellidos" required><br>
+      
+      <br><label for="correo" class="letra">Correo electrónico:</label><br>
+      <input class="dato" type="email" id="correo" name="correo" required><br>
+      
+      <br><label for="fecha_nacimiento" class="letra">Fecha de nacimiento:</label><br>
+      <input  class="dato" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+      
+      <br><label for="num_seg_social" class="letra">Número de seguridad social:</label><br>
+      <input class="dato" type="text" id="num_seg_social" name="num_seg_social" required><br>
+      
+      <br><label for="telefono" class="letra">Teléfono:</label><br>
+      <input class="dato" type="tel" id="telefono" name="telefono" required><br>
+      
+      <br><label for="direccion" class="letra">Dirección:</label><br>
+      <input class="dato" type="text" id="direccion" name="direccion" required><br>
+      
+      <br><label for="tutor" class="letra">Tutor:</label><br>
+      <input class="dato" type="text" id="tutor" name="tutor" required><br>
+      
+      <br><strong></strong><input class="btn-inc" style="color:white" type="button" value="Cancelar" onclick="limpiarFormulario()">
+      <input class="btn-inc" style="color:white" type="submit" value="Guardar" onclick="guardarAlumno()">
+    </form></center>
+</body>
+</html>
+<script src="Persona.js"></script>
