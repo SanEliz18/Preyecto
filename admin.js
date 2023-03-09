@@ -1,52 +1,78 @@
 
-  var materia = [];
-  var materia1 = [];
-  var materia2 = [];
-  var materia3 = [];
+function verificarMateriaSeleccionada() {
 
-  function guardarmateria(){
-    alert("Se guardo la materia");
- 
-
-}
-function guardarmateria1(){
-  let name =  document.getElementById('nombre del producto');
-  let generation  =  document.getElementById('enviar');
-  let crr1 = new materia1(name.value, generation.value);
-  materia1.push(crr1);
-  alert("Se guardo la materia");
-  name.value = "";
-  generation.value = "";
-
-  insertmateria1();
-}
-function guardarmateria2(){
-  let name =  document.getElementById('nombre del producto');
-  let generation  =  document.getElementById('enviar');
-  let crr1 = new materia2(name.value, generation.value);
-  materia2.push(crr1);
-  alert("Se guardo la materia");
-  name.value = "";
-  generation.value = "";
-
-  insertmateria2();
-}
-function guardarmateria3(){
-  let name =  document.getElementById('nombre del producto');
-  let generation  =  document.getElementById('enviar');
-  let crr1 = new materia3(name.value, generation.value);
-  materia3.push(crr1);
-  alert("Se guardo la materia");
-  name.value = "";
-  generation.value = "";
-
-  insertmateria3();
-}
-function insertmateria(){
-  let materia =  document.getElementById('materia');
-  let options = ' <option value="" selected disabled>Seleccione</option>';
-  for(let i = 0; i<materia.length; i++){
-      options += `<option value="${i}">${materia[i].Nombre}</option>`;
+  var materiaSeleccionada1 = document.getElementById("materia").value;
+  var textoPredeterminado = "---"
+  if (materiaSeleccionada1 === "" ) {
+    alert("Por favor, elija una materia");
+  } else if (materiaSeleccionada1 === textoPredeterminado) {
+    alert("Por favor, elija una materia válida");
+  } else {
+    alert("Materia elegida correctamente: " + materiaSeleccionada);
   }
-  materia.innerHTML = options;
 }
+function verificarMateriaSeleccionada1() {
+  var materiaSeleccionada = document.getElementById("materia1").value;
+  var textoPredeterminado = "---"
+  if (materiaSeleccionada === "") {
+    alert("Por favor, elija una materia");
+  } else if (materiaSeleccionada === textoPredeterminado) {
+    alert("Por favor, elija una materia válida");
+  } else {
+    alert("Materia elegida correctamente: " + materiaSeleccionada);
+  }
+}
+function verificarMateriaSeleccionada2() {
+  var materiaSeleccionada = document.getElementById("materia2").value;
+  var textoPredeterminado = "---"
+  if (materiaSeleccionada === "") {
+    alert("Por favor, elija una materia");
+  } else if (materiaSeleccionada === textoPredeterminado) {
+    alert("Por favor, elija una materia válida");
+  } else {
+    alert("Materia elegida correctamente: " + materiaSeleccionada);
+  }
+}
+function verificarMateriaSeleccionada3() {
+  var materiaSeleccionada = document.getElementById("materia3").value;
+  var textoPredeterminado = "---"
+  if (materiaSeleccionada === "") {
+    alert("Por favor, elija una materia");
+  } else if (materiaSeleccionada === textoPredeterminado) {
+    alert("Por favor, elija una materia válida");
+  } else {
+    alert("Materia elegida correctamente: " + materiaSeleccionada);
+  }
+}
+
+
+
+
+function RestringirMateria(materia) {
+  if (materiaSeleccionada1.includes(materia)) {
+    alert("Esta materia ya ha sido elegida");
+  } else {
+    materiaSeleccionada1.push(materia);
+    localStorage.setItem("materia", JSON.stringify(materiaSeleccionada1));
+    alert(" materia " + materia + " ha sido elegida");
+  }
+}
+
+function obtenerMateriasElegidas() {
+  var materiaSeleccionada1 = localStorage.getItem("materia");
+  const materiasElegidas = JSON.parse(materiaSeleccionadasJSON);
+  console.log("Materias elegidas: ", materiaSeleccionada1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

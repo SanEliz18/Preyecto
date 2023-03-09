@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #8d1783;
+    background-color: hsl(0, 0%, 100%);
     padding-top: 80px;
 }
 
@@ -30,7 +30,7 @@ header {
     justify-content: center;
     gap: 15%;
     height: 70px;
-
+    
     width: 100%;
 }
 
@@ -49,7 +49,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: hsla(0, 85%, 48%, 0.537);
+    background-color: hsl(347, 81%, 20%);
     height: 400px;
     width: 400px;
     border-radius: 20px;

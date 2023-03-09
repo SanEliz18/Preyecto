@@ -23,7 +23,7 @@
 <body>
     
     <header id="header">
-        <h1>Tira de Materias</h1>
+        <strong><h1 style="color:#861024">TIRA DE MATERIAS</h1></strong>
     </header>
 
     <main>
@@ -33,36 +33,36 @@
              <div class="editar">
                 <h2>Area Basica  </h2>
                     <form action="">
-                    <label>Nombre del producto</label>
-                    <select id="productoEditar">
+                    <label>Porfavor escoga 2 materias </label>
+                    <select id="materia">
                         <option value="">---</option>
-                        <option value="">Administraccion</option>
-                        <option value="">Sociologiaa de la empresa</option>
-                        <option value="">Tecnicas de Negociacion</option>
-                        <option value="">Microeconomia</option>
-                        <option value="">Macroeconomia</option>
-                        <option value="">Contabilidad</option>
-                        <option value="">Costos y presupuestos</option>
-                        <option value="">Administraccion Financiera</option>
-                        <option value="">La funcion informatica</option>
-                        <option value="">Procesador de texto y presentaciones electronicas</option>
-                        <option value="">Hoja de Calculo</option>
-                        <option value="">Algebra</option>
-                        <option value="">Matematicas Discretas</option>
-                        <option value="">Calculo</option>
-                        <option value="">Estadistica</option>
-                        <option value="">Investigacion de Operaciones</option>
-                        <option value="">Evaluacion de proyectos de Inversion</option>
-                        <option value="">Probabilidad</option>
-                        <option value="">Ingles I</option>
-                        <option value="">Ingles II</option>
-                        <option value="">Ingles III</option>
-                        <option value="">Ingles IV</option>
-                        <option value="">Ingles V</option>
+                        <option value="Administraccion">Administraccion</option>
+                        <option value="Sociologiaa de la empresa">Sociologiaa de la empresa</option>
+                        <option value="Tecnicas de Negociacion">Tecnicas de Negociacion</option>
+                        <option value="Microeconomia">Microeconomia</option>
+                        <option value="Macroeconomia">Macroeconomia</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Costos y presupuestos">Costos y presupuestos</option>
+                        <option value="Administraccion Financiera">Administraccion Financiera</option>
+                        <option value="La funcion informatica">La funcion informatica</option>
+                        <option value="Procesador de texto y presentaciones electronicas">Procesador de texto y presentaciones electronicas</option>
+                        <option value="Hoja de Calculo">Hoja de Calculo</option>
+                        <option value="Algebra">Algebra</option>
+                        <option value="Matematicas Discretas">Matematicas Discretas</option>
+                        <option value="Calculo">Calculo</option>
+                        <option value="Estadistica">Estadistica</option>
+                        <option value="Investigacion de Operaciones">Investigacion de Operaciones</option>
+                        <option value="Evaluacion de proyectos de Inversion">Evaluacion de proyectos de Inversion</option>
+                        <option value="Probabilidad">Probabilidad</option>
+                        <option value="Ingles I">Ingles I</option>
+                        <option value="Ingles II">Ingles II</option>
+                        <option value="Ingles III">Ingles III</option>
+                        <option value="Ingles IV">Ingles IV</option>
+                        <option value="Ingles V<">Ingles V</option>
                       
                       
                     </select>
-                    <button class="btn btn-primary float-right" onclick="guardarmateria()">Guardar</button>
+                    <input type="submit" onclick="verificarMateriaSeleccionada();" onclick="RestringirMateria(materia);" value="Enviar" >
                    
                 </form>
             </div>
@@ -71,50 +71,50 @@
                 <h2>Area Profesional  </h2>
 
                 <form >
-                    <label>Nombre del producto</label>
-                    <select id="productoEditar">
+                    <label>Porfavor escoga 5 materias</label>
+                    <select id="materia1">
 
                         <option value="">---</option>
-                        <option value="">Arquitectura de computadoras</option>
-                        <option value="">Analisis de requerimientos del SW</option>
-                        <option value="">Fundamentos de computacion</option>
-                        <option value="">Comunicacion de datos</option>
-                        <option value="">Redes de computadoras I</option>
-                        <option value="">Redes de computadoras II</option>
-                        <option value="">Teoria de leguajes y compiladores</option>
-                        <option value="">Sistemas operativos</option>
-                        <option value="">Laboratorio de computacion</option>
-                        <option value="">Laboratorio de sistemas abiertos y comunicaciones</option>
-                        <option value="">Metodologia de programacion</option>
-                        <option value="">Algoritmica y estructura de datos I</option>
-                        <option value="">Algoritmica y estructura de datos II</option>
-                        <option value="">Ingeneria en software I</option>
-                        <option value="">Ingeneria en software Ii</option>
-                        <option value="">Programacion estructurada</option>
-                        <option value="">Desarrollo de aplicaiones web</option>
-                        <option value="">Desarrollo de aplicaiones moviles</option>
-                        <option value="">Programacion orientado a objetos I</option>
-                        <option value="">Programacion orientado a objetos II</option>
-                        <option value="">Lenguaje de alto nivel</option>
-                        <option value="">Programacion de nuevas tecnologias</option>
-                        <option value="">Estandares de desarrollo de software</option>
-                        <option value="">Bases de datos I</option>
-                        <option value="">Bases de datos II</option>
-                        <option value="">Analisis de diseño de sistemas I</option>
-                        <option value="">Analisis de diseño de sistemas II</option>
-                        <option value="">Arquitectura de procesos</option>
-                        <option value="">Seguridad informatica</option>
-                        <option value="">Inteligencia de negocios</option>
-                        <option value="">Negocios electronicos</option>
-                        <option value="">Sistemas de Gestion empresarial</option>
-                        <option value="">Inteligencia artificial</option>
-                        <option value="">Administracion de proyectos informaticos</option>
-                        <option value="">Administracion de la funcion informatica</option>
-                        <option value="">Auditoria de sistemas informaticos</option>
-                        <option value="">Compiladores e interpretes</option>
-                        <option value="">Diseños de interfaces</option>
+                        <option value="Arquitectura de computadoras">Arquitectura de computadoras</option>
+                        <option value="Analisis de requerimientos del SW">Analisis de requerimientos del SW</option>
+                        <option value="Fundamentos de computacion">Fundamentos de computacion</option>
+                        <option value="Comunicacion de datos">Comunicacion de datos</option>
+                        <option value="Redes de computadoras I">Redes de computadoras I</option>
+                        <option value="Redes de computadoras II">Redes de computadoras II</option>
+                        <option value="Teoria de leguajes y compiladores">Teoria de leguajes y compiladores</option>
+                        <option value="Sistemas operativos">Sistemas operativos</option>
+                        <option value="Laboratorio de computacion">Laboratorio de computacion</option>
+                        <option value="Laboratorio de sistemas abiertos y comunicaciones">Laboratorio de sistemas abiertos y comunicaciones</option>
+                        <option value="Metodologia de programacion">Metodologia de programacion</option>
+                        <option value="Algoritmica y estructura de datos I">Algoritmica y estructura de datos I</option>
+                        <option value="Algoritmica y estructura de datos II">Algoritmica y estructura de datos II</option>
+                        <option value="Ingeneria en software I">Ingeneria en software I</option>
+                        <option value="Ingeneria en software II">Ingeneria en software II</option>
+                        <option value="Programacion estructurada">Programacion estructurada</option>
+                        <option value="Desarrollo de aplicaiones web">Desarrollo de aplicaiones web</option>
+                        <option value="Desarrollo de aplicaiones moviles">Desarrollo de aplicaiones moviles</option>
+                        <option value="Programacion orientado a objetos I">Programacion orientado a objetos I</option>
+                        <option value="Programacion orientado a objetos II">Programacion orientado a objetos II</option>
+                        <option value="Lenguaje de alto nivel">Lenguaje de alto nivel</option>
+                        <option value="Programacion de nuevas tecnologias">Programacion de nuevas tecnologias</option>
+                        <option value="Estandares de desarrollo de software">Estandares de desarrollo de software</option>
+                        <option value="Bases de datos I">Bases de datos I</option>
+                        <option value="Bases de datos II">Bases de datos II</option>
+                        <option value="Analisis de diseño de sistemas I">Analisis de diseño de sistemas I</option>
+                        <option value="Analisis de diseño de sistemas II">Analisis de diseño de sistemas II</option>
+                        <option value="Arquitectura de procesos">Arquitectura de procesos</option>
+                        <option value=">Seguridad informatica">Seguridad informatica</option>
+                        <option value="Inteligencia de negocios">Inteligencia de negocios</option>
+                        <option value="Negocios electronicos">Negocios electronicos</option>
+                        <option value="Sistemas de Gestion empresarial">Sistemas de Gestion empresarial</option>
+                        <option value="Inteligencia artificial">Inteligencia artificial</option>
+                        <option value="Administracion de proyectos informaticos">Administracion de proyectos informaticos</option>
+                        <option value="Administracion de la funcion informatica">Administracion de la funcion informatica</option>
+                        <option value="Auditoria de sistemas informaticos">Auditoria de sistemas informaticos</option>
+                        <option value="Compiladores e interpretes">Compiladores e interpretes</option>
+                        <option value="Diseños de interfaces">Diseños de interfaces</option>
                 
-                        <input type="submit"onclick="guardarmateria1()" value="Enviar">
+                        <input type="submit"onclick="verificarMateriaSeleccionada1();" value="Enviar">
                     </select>
 
                     
@@ -124,16 +124,17 @@
              <div class="editar3">
                 <h2>Area Metodologica</h2>
                 <form>
-                    <label>Nombre del producto</label>
-                    <select id="productoEditar">
+                    <label>  materias en 9 cuatrimestre</label>
+                    <select id="materia2">
                         <option value="">---</option>
-                        <option value="">Metodologia de la investigacion</option>
-                        <option value="">Emprendedores</option>
-                        <option value="">Seminario de la investigacion I</option>
-                        <option value="">Seminario de la Investigacion II</option>
-                        <option value="">Proyecto de investigacion</option>
+                        <option value="Comunicacion Oral y escrita">Comunicacion Oral y escrita</option>
+                        <option value="Metodologia de la investigacion">Metodologia de la investigacion</option>
+                        <option value="Emprendedores">Emprendedores</option>
+                        <option value="Seminario de la investigacion I">Seminario de la investigacion I</option>
+                        <option value="Seminario de la Investigacion II">Seminario de la Investigacion II</option>
+                        <option value="Proyecto de investigacion">Proyecto de investigacion</option>
                 
-                        <input type="submit"onclick="guardarmateria2()" value="Enviar">
+                        <input type="submit"onclick="verificarMateriaSeleccionada2();" value="Enviar">
                     </select>
 
                   
@@ -146,49 +147,22 @@
                 <h2>Area Optativa</h2>
                 <form>
                     <label>Nombre del producto</label>
-                    <select id="productoEditar">
+                    <select id="materia3">
                         <option value="">---</option>
-                        <option value="">Metodologia de la investigacion</option>
-                        <option value="">Emprendedores</option>
-                        <option value="">Seminario de la investigacion I</option>
-                        <option value="">Seminario de la Investigacion II</option>
-                        <option value="">Proyecto de investigacion</option>
+                        <option value="Deotologia">Deotologia</option>
+                        <option value="Etica profesional">Etica profesional</option>
+                        <option value="Electronica">Electronica</option>
+                        <option value="Logica">Logica</option>
+                        <option value="Mantenimiento laboratorio">Mantenimiento laboratorio</option>
+                        <option value="Liderazgo">Liderazgo</option>
                 
-                        <input type="submit"onclick="guardarmateria3()" value="Enviar">
+                        <input type="submit"onclick="verificarMateriaSeleccionada3();" value="Enviar">
                     </select>
 
                   
                     
                 </form>
             </div>
-          
-      
-             <div class="Verificacion">
-                <h2>Verificacion</h2>
-                <form>
-        
-                            <label>Nombre del producto</label>
-                            <select id="productoVericar">
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-                                <option value="">   </option>
-
-                                <input type="submit"onclick="Verificacion()" value="Enviar">
-                            </select>
-        
-                           
-                        </form> 
-            </div>
-            
-
-        </div>
-        
         
     </main>
     

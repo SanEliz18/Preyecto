@@ -49,8 +49,5 @@ class Alumno {
     }
 
     function buscar(){
-        let mat = document.getElementById('matri');
-        if(mat == localStorage.setItem('matricula')|| mat==localStorage.setItem('correo')){
-            alert("usuario registrado");
-        }
+        
     }
