@@ -75,3 +75,20 @@ height: .9cm;
 background-color: #861024;
 font-size: .5cm ;
 }
+.col1{
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    margin: 15px 0px;
+    width: 100%;
+    padding-top: 0px;
+    list-style-type: none;
+}
+.col2{
+    padding-right: 2px;
+    display:inline ;
+    padding-left: 2px;
+    float: left;
+    width: 35%;
+    padding-top: 1px;
+}

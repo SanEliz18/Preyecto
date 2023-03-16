@@ -47,7 +47,3 @@ class Alumno {
   
       return matricula;
     }
-
-    function buscar(){
-        
-    }

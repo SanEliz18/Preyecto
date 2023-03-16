@@ -1,11 +1,11 @@
 
 function verificarMateriaSeleccionada() {
 
-  var materiaSeleccionada1 = document.getElementById("materia").value;
+  var materiaSeleccionada = document.getElementById("materia").value;
   var textoPredeterminado = "---"
-  if (materiaSeleccionada1 === "" ) {
+  if (materiaSeleccionada === "" ) {
     alert("Por favor, elija una materia");
-  } else if (materiaSeleccionada1 === textoPredeterminado) {
+  } else if (materiaSeleccionada === textoPredeterminado) {
     alert("Por favor, elija una materia válida");
   } else {
     alert("Materia elegida correctamente: " + materiaSeleccionada);
