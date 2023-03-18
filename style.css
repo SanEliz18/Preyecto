@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: rgb(230, 225, 230);
 }
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(319, 13%, 28%);
     padding-top: 80px;
 }
 
@@ -72,19 +72,70 @@ select {
     padding: 5px;
     color: black;
 }
-option{
-    color: black;
+/**/
+
+
+.contenedora {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.contenedor .button {
+.contenedora>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(347, 81%, 20%);
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+}
+
+.contenedora>div>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contenedora>div>form>input,
+select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: rgb(142, 22, 22);
+}
+.contenedora>div>form>input,
+select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: rgb(212, 206, 206);
+}
+h2{
+    color: rgb(243, 242, 242);
+}
+.contenedora .button {
     margin-top: 20px;
     height: 30px;
     border-radius: 7px;
     border: none;
-    color: black;
+    color: rgb(85, 203, 128);
 }
 
-.contenedorProductos h2 {
+.contenedora>ul {
+    color: rgb(46, 162, 172);
+
+}
+
+.contenedoraProductos h2 {
     text-align: center;
     padding-bottom: 20px;
     font-weight: 300;
