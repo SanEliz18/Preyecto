@@ -8,7 +8,7 @@
     border-radius:150px ;
     height: 50px;
 }
-#btn-inc{
+.btn-inc{
     color: rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
@@ -50,7 +50,7 @@
 .sex{
     background-color: #9e9e9e;
     width: 5cm;
-    height: .6cm;
+    height: 1cm;
     font-size: 16px;
 }
 .letra{
@@ -59,10 +59,15 @@
 .ins{
     font-size: .7cm;
     background-color: #861024;
-    width: 210px;
+    width: 310px;
     height: 50px;
     color: #ffffff;
     border-radius: .7cm;     
+}
+.ins1{
+    font-size: 1cm;
+    background-color: #861024;
+    color: #ffffff;     
 }
 .cuadro{
     text-align: center;

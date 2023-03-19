@@ -1,5 +1,5 @@
 class Alumno {
-    constructor(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula) {
+    constructor(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula,materia) {
       this.nombre = nombre;
       this.apellidos = apellidos;
       this.correo = correo;
@@ -9,6 +9,7 @@ class Alumno {
       this.direccion = direccion;
       this.tutor = tutor;
       this.matricula = matricula;
+      this.materia = materia;
     }
   }
   
@@ -27,8 +28,9 @@ class Alumno {
     const tutor = document.getElementById("tutor").value;
   
     const matricula = generarMatricula();
+    const materia = guardarMateria();
   
-    const alumno002 = new Alumno(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula);
+    const  alumno002 = new Alumno(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula, materia);
   alumnos.push(alumno002);
   
     localStorage.setItem("Datillos", JSON.stringify(alumno002));
@@ -66,4 +68,29 @@ function ost() {
   
  }
 
+}
+function guardarMateria() {
+  var seleccionados = [];
+
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+
+  for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].checked) {
+          seleccionados.push(checkboxes[i].value);
+          
+      }
+  }
+  let lista = document.getElementById("lista1");
+  let checks = document.querySelectorAll(".basi"); 
+  lista.innerHTML = '';
+      checks.forEach((e)=>{
+          if(e.checked == true){
+               var elemento = document.createElement('li');
+              elemento.className = 'lista1-item';
+              elemento.innerHTML = e.value;
+              lista.appendChild(elemento);   
+          }
+      });
+
+  localStorage.setItem("seleccionados", JSON.stringify(seleccionados));
 }
