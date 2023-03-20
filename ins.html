@@ -23,6 +23,7 @@
       
       <br><label for="fecha_nacimiento" class="letra">Fecha de nacimiento:</label><br>
       <input  class="dato" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+      <label id="edad" class="letra"></label>
       
       <br><label for="num_seg_social" class="letra">Número de seguridad social:</label><br>
       <input class="dato" type="text" id="num_seg_social" name="num_seg_social" minlength="11" maxlength="11" required><br>
@@ -39,15 +40,15 @@
       <br><label class="letra" type="text">Elige tu cuatrimestre</label>
       <br><select class="dato" id="cuatris">
         <option value="">cuatrimestre</option>
-        <option class="cuatri">Primer cuatrimestre</option>
-        <option class="cuatri">Segundo cuatrimestre</option>
-        <option class="cuatri">Tercer cuatrimestre</option>
-        <option class="cuatri">cuarto cuatrimestre</option>
-        <option class="cuatri">Quinto cuatrimestre</option>
-        <option class="cuatri">Sexto cuatrimestre</option>
-        <option class="cuatri">Septimo cuatrimestre</option>
-        <option class="cuatri">Octavo cuatrimestre</option>
-        <option class="cuatri">Noveno cuatrimestre</option>
+        <option value="1">Primer cuatrimestre</option>
+        <option value="2">Segundo cuatrimestre</option>
+        <option value="3">Tercer cuatrimestre</option>
+        <option value="4">cuarto cuatrimestre</option>
+        <option value="5">Quinto cuatrimestre</option>
+        <option value="6">Sexto cuatrimestre</option>
+        <option value="7">Septimo cuatrimestre</option>
+        <option value="8">Octavo cuatrimestre</option>
+        <option value="9">Noveno cuatrimestre</option>
       </select><br>
       <script>
         const miSelect = document.getElementById('cuatris');

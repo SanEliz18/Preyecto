@@ -27,13 +27,12 @@ function guardarAlumno() {
   const telefono = document.getElementById("telefono").value;
   const direccion = document.getElementById("direccion").value;
   const tutor = document.getElementById("tutor").value;
-
+  
   const cuatri = document.getElementById("cuatris").value;
   if(cuatri.value == true){
     console.log(cuatri);
   }
   const matricula = generarMatricula();
-  
   
 
   const form = document.getElementById("formulario");
@@ -56,6 +55,14 @@ function guardarAlumno() {
       return false;
     }
     else{
+    var edad = calcularEdad(fecha_nacimiento);
+    document.getElementById("edad").innerHTML = "La edad es: " + edad;
+      if(edad < 17){
+        alert("eres muy joven");
+        return false;
+
+      }
+      else{
       alumnos.push(alumno002);
       localStorage.setItem("Datillos", JSON.stringify(alumnos));
       
@@ -65,9 +72,22 @@ function guardarAlumno() {
 
       window.location.href="validación1.html";
       return true;
-
+      }
     }
+  
 }
+
+function calcularEdad(fecha_nacimiento) {
+  var hoy = new Date();
+  var cumpleanos = new Date(fecha_nacimiento);
+  var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+  var m = hoy.getMonth() - cumpleanos.getMonth();
+  if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+    edad--;
+  }
+  return edad;
+}
+
 
 function generarMatricula() {
   const prefijo = "2301";
@@ -183,23 +203,10 @@ function cargar() {
 
 cargar();
 
-function seleccionar_materias_basicas() {
-  number_basic = 0;
-  let basic = document.getElementById('basic').getElementsByTagName("input");
-  for (let i = 0; i < basic.length; i++) {
-      if (basic[i].checked) {
-          number_basic++;
-          if (number_basic > 2) {
-              basic[i].checked = false;
-              number_basic--;
-              alert("Solo puede seleccionar un máximo de 2 materias en el área básica.");
-          }
-      }
-  }
-}
+
 function seleccionar_materias_metod() {
   number_metodologicas = 0;
-  let metod = document.getElementById('metodologicas').getElementsByTagName("input");
+  let metod = document.getElementById('meto').getElementsByTagName("input");
   for (let i = 0; i < metod.length; i++) {
       if (metod[i].checked) {
           number_metodologicas++;

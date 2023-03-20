@@ -22,7 +22,7 @@
     <body ><br><br><br>
        <center><h3 style="background-color: #861024; font-size: .8cm;">SELECCIONA TUS MATERIAS</h3></center><br><br>
         <div class="contenedor">
-        <form id="basic" ><br>
+        <form ><br><a id="basic">
         <h2>AREA BASICA</h2>
         
         
@@ -143,8 +143,9 @@
                 <label for="m3">Tecnicas de Negociacion</label>
                 <br>
             </p>
-            <br>
-        <hr><br>
+        </a>
+            <br><hr><br>
+        <a id="prof">
             <h2>AREA PROFECIONAL</h2><br>
                 <p>
                     <input type="checkbox" value="Administracion de la funcion informatica" name="materiaprof" id="mf1" class="prof" style="align-items: center;">
@@ -338,7 +339,10 @@
                     <input type="checkbox" value="Teoria de leguajes y compiladores" name="materiabasica" id="mf38" class="prof" style="align-items: center;">
                     <label for="mf38">Teoria de leguajes y compiladores</label>
                     <br>
-                </p><br><hr><br>
+                </p>
+            </a>
+                <br><hr><br>
+            <a id="meto">
                 <h2>AREA METODOLOGIA</h2>
                 <p>
                     <input type="checkbox" value="Comunicacion Oral y escrita" name="materiameto" id="mm1" class="met" style="align-items: center;">
@@ -368,8 +372,10 @@
                     <input type="checkbox" value="Seminario de la Investigacion II" name="materiameto" id="mm6" class="met" style="align-items: center;">
                     <label for="mm6">Seminario de la Investigacion II</label>
                     <br>
-                </p><br><hr><br>
-
+                </p>
+            </a>
+                <br><hr><br>
+            <a id="opta">
                 <h2>AREA OPTATIVA</h2>
                 <p>
                     <input type="checkbox" value="Deotologia" name="materiaopta" id="mo1" class="op" style="align-items: center;">
@@ -405,6 +411,7 @@
                     <br><button type="button" id="btn1" class="ins" onclick="guardarMateria()">Guardar</button>
                 </p>
             </form>
+        </a>
             <div class="contenedor">
             <h2>Materias elejidas</h2>
             <ul id="lista1" class="basic"></ul>
