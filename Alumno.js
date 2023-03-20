@@ -29,6 +29,7 @@ function guardarAlumno() {
   const tutor = document.getElementById("tutor").value;
   
   const cuatri = document.getElementById("cuatris").value;
+  
   if(cuatri.value == true){
     console.log(cuatri);
   }
@@ -102,6 +103,7 @@ function generarMatricula() {
 }
 
 function ost() {
+
   let dats_local= [];
   let matriculs = document.getElementById("matri").value;
   let alumnos_local = JSON.parse(localStorage.getItem("Datillos")) || [];
@@ -110,11 +112,15 @@ function ost() {
 
   let arreglillo = dats_local.some(({ matricula}) => matricula === matriculs);
   console.log(arreglillo);
+  console.log(arreglillo1);
 
   if (arreglillo === undefined) {
     alert("datos incorrectos");
   } else {
     alert("datos correctos");
+    window.location.href="validación1.html";
+    }
+
   }
 }
 

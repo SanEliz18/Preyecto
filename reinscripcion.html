@@ -12,8 +12,25 @@
         <h1 style=" color:#861024; font-size:7" align="center" >REINSCRIPCIÓN</h1>
         <center><a class="letra"> Matricula<br>
             <input class="datos" id="matri"></a><br><br>
-        <button class="enviar" style="color:white" onclick="ost()"><strong>Registrar</strong></button></center>
+            <br><label class="letra" type="text">Elige tu cuatrimestre</label>
+      <br><select class="datos" id="cuatris1">
+        <option value="">cuatrimestre</option>
+        <option value="2">Segundo cuatrimestre</option>
+        <option value="3">Tercer cuatrimestre</option>
+        <option value="4">cuarto cuatrimestre</option>
+        <option value="5">Quinto cuatrimestre</option>
+        <option value="6">Sexto cuatrimestre</option>
+        <option value="7">Septimo cuatrimestre</option>
+        <option value="8">Octavo cuatrimestre</option>
+        <option value="9">Noveno cuatrimestre</option>
+      </select><br>
+        <br><button class="enviar" style="color:white" onclick="ost()"><strong>Registrar</strong></button></center>
  
         <script src="Alumno.js"></script>
+        <script>
+            const miSelect = document.getElementById('cuatris1');
+
+            miSelect.options[0].disabled = true;
+        </script>
     </body>
 </html>
