@@ -1,5 +1,5 @@
 class Alumno {
-  constructor(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula) {
+  constructor(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula, cuatri) {
     this.nombre = nombre;
     this.apellidos = apellidos;
     this.correo = correo;
@@ -9,6 +9,7 @@ class Alumno {
     this.direccion = direccion;
     this.tutor = tutor;
     this.matricula = matricula;
+    this.cuatrimestre = cuatri;
   }
 }
 
@@ -27,26 +28,45 @@ function guardarAlumno() {
   const direccion = document.getElementById("direccion").value;
   const tutor = document.getElementById("tutor").value;
 
-  const matricula = generarMatricula();
-
-  const alumno002 = new Alumno(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula);
-  alumnos.push(alumno002);
-
-  localStorage.setItem("Datillos", JSON.stringify(alumnos));
-
-  const miSelect = document.getElementById('cuatris');
-
-  miSelect.options[0].disabled = true;
-  if(miSelect.options[0]){
-    alert("Selecciona un cuatrimestre");
+  const cuatri = document.getElementById("cuatris").value;
+  if(cuatri.value == true){
+    console.log(cuatri);
   }
+  const matricula = generarMatricula();
+  
+  
 
+  const form = document.getElementById("formulario");
+  const alumno002 = new Alumno(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula, cuatri);
+  
+    const camposRequeridos = form.querySelectorAll("[required]");
+    
+    let hayCamposVacios = false;
 
-  alert("El alumno ha sido guardado con éxito. Su matrícula es: " + matricula);
+    camposRequeridos.forEach(function(campo) {
+      if (campo.value === "") {
+        if(cuatri.value === ""){
+        hayCamposVacios = true;
+      }
+    }
+  });
+  
+    if (hayCamposVacios) {
+      alert("Por favor, completa todos los campos requeridos y selecciona un cuatrimestre.");
+      return false;
+    }
+    else{
+      alumnos.push(alumno002);
+      localStorage.setItem("Datillos", JSON.stringify(alumnos));
+      
+      alert("El alumno ha sido guardado con éxito. Su matrícula es: " + matricula);
 
-  limpiarFormulario();
+      limpiarFormulario();
 
-  window.location.href="validación1.html";
+      window.location.href="validación1.html";
+      return true;
+
+    }
 }
 
 function generarMatricula() {

@@ -54,7 +54,7 @@ header {
     width: 400px;
     border-radius: 20px;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 35cx;
     gap: 25px;
     flex: 1 1 300px;
 }

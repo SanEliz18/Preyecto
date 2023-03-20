@@ -38,24 +38,22 @@
       
       <br><label class="letra" type="text">Elige tu cuatrimestre</label>
       <br><select class="dato" id="cuatris">
-        <option >cuatrimestre</option>
-        <option class="cuatri" value="Primer cuatrimestre">Primer cuatrimestre</option>
-        <option class="cuatri" value="Segundo cuatrimestre">Segundo cuatrimestre</option>
-        <option class="cuatri" value="Tercer cuatrimestre">Tercer cuatrimestre</option>
-        <option class="cuatri" value="cuarto cuatrimestre">cuarto cuatrimestre</option>
-        <option class="cuatri" value="Quinto cuatrimestre">Quinto cuatrimestre</option>
-        <option class="cuatri" value="Sexto cuatrimestre">Sexto cuatrimestre</option>
-        <option class="cuatri" value="Septimo cuatrimestre">Septimo cuatrimestre</option>
-        <option class="cuatri" value="Octavo cuatrimestre">Octavo cuatrimestre</option>
-        <option class="cuatri" value="Noveno cuatrimestre">Noveno cuatrimestre</option>
+        <option value="">cuatrimestre</option>
+        <option class="cuatri">Primer cuatrimestre</option>
+        <option class="cuatri">Segundo cuatrimestre</option>
+        <option class="cuatri">Tercer cuatrimestre</option>
+        <option class="cuatri">cuarto cuatrimestre</option>
+        <option class="cuatri">Quinto cuatrimestre</option>
+        <option class="cuatri">Sexto cuatrimestre</option>
+        <option class="cuatri">Septimo cuatrimestre</option>
+        <option class="cuatri">Octavo cuatrimestre</option>
+        <option class="cuatri">Noveno cuatrimestre</option>
       </select><br>
       <script>
         const miSelect = document.getElementById('cuatris');
 
         miSelect.options[0].disabled = true;
-        if(miSelect.options[0]){
-          alert("Selecciona un cuatrimestre");
-        }
+        
 
       </script>
       <br><strong></strong><input class="btn-inc" style="color:white" type="button" value="Cancelar" onclick="limpiarFormulario()">

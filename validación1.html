@@ -22,11 +22,13 @@
     <body ><br><br><br>
        <center><h3 style="background-color: #861024; font-size: .8cm;">SELECCIONA TUS MATERIAS</h3></center><br><br>
         <div class="contenedor">
-        
-        <h2>AREA BASICA</h2>
         <form id="basic" ><br>
+        <h2>AREA BASICA</h2>
+        
+        
+            <a><strong>Elige solo 2 materias</strong></a><br>
             <p>
-                <input type="checkbox" value="Administración" name="materiabasica" id="mb1" class="basi" style="align-items: center;">
+                <br><input type="checkbox" value="Administración" name="materiabasica" id="mb1" class="basi" style="align-items: center;">
                 <label for="m1">Administración</label>
                 <br>
             </p>
@@ -142,6 +144,7 @@
                 <br>
             </p>
             <br>
+        <hr><br>
             <h2>AREA PROFECIONAL</h2><br>
                 <p>
                     <input type="checkbox" value="Administracion de la funcion informatica" name="materiaprof" id="mf1" class="prof" style="align-items: center;">
@@ -228,6 +231,9 @@
                     <label for="mf17">Diseños de interfaces</label>
                     <br>
                 </p>
+            </form>
+            <form>
+                
                 <p>
                     <input type="checkbox" value="Estandares de desarrollo de software" name="materiaprof" id="mf18" class="prof" style="align-items: center;">
                     <label for="mf18">Estandares de desarrollo de software</label>
@@ -332,7 +338,7 @@
                     <input type="checkbox" value="Teoria de leguajes y compiladores" name="materiabasica" id="mf38" class="prof" style="align-items: center;">
                     <label for="mf38">Teoria de leguajes y compiladores</label>
                     <br>
-                </p><br>
+                </p><br><hr><br>
                 <h2>AREA METODOLOGIA</h2>
                 <p>
                     <input type="checkbox" value="Comunicacion Oral y escrita" name="materiameto" id="mm1" class="met" style="align-items: center;">
@@ -362,7 +368,8 @@
                     <input type="checkbox" value="Seminario de la Investigacion II" name="materiameto" id="mm6" class="met" style="align-items: center;">
                     <label for="mm6">Seminario de la Investigacion II</label>
                     <br>
-                </p><br>
+                </p><br><hr><br>
+
                 <h2>AREA OPTATIVA</h2>
                 <p>
                     <input type="checkbox" value="Deotologia" name="materiaopta" id="mo1" class="op" style="align-items: center;">
@@ -393,13 +400,12 @@
                     <input type="checkbox" value="Mantenimiento laboratorio" name="materiaopta" id="mo6" class="op" style="align-items: center;">
                     <label for="mo6">Mantenimiento laboratorio</label>
                     <br>
+                </p><br>
+                <p>
+                    <br><button type="button" id="btn1" class="ins" onclick="guardarMateria()">Guardar</button>
                 </p>
-            <p>
-            <br><button type="button" id="btn1" onclick="guardarMateria()">Guardar</button>
-            </p>
-            
             </form>
-                <div class="contenedor">
+            <div class="contenedor">
             <h2>Materias elejidas</h2>
             <ul id="lista1" class="basic"></ul>
             <ul id="lista2" class="prof"></ul>
