@@ -20,7 +20,10 @@
        <link rel="stylesheet" href="estilos.css">
        
     <body ><br><br><br>
-       <center><h3 style="background-color: #861024; font-size: .8cm;">SELECCIONA TUS MATERIAS</h3></center><br><br>
+       <center><h3 style="background-color: #861024; font-size: .8cm;">SELECCIONA TUS MATERIAS</h3><br><br>
+            <strong><h3>Para ver tu lista de materias da click en el botón de "Guardar"</h3></strong>
+            <strong><h3>Cuando hayas elegito tus materias da click en el botón de "Listo"</h3>
+            <h3>Solo puedes elegir 7 materias 2 de ellas deben ser del area basica</h3></strong></center>
         <div class="contenedor">
         <form ><br><a id="basic">
         <h2>AREA BASICA</h2>
@@ -409,7 +412,9 @@
                 </p><br>
                 <p>
                     <br><button type="button" id="btn1" class="ins" onclick="guardarMateria()">Guardar</button>
+                    
                 </p>
+                
             </form>
         </a>
             <div class="contenedor">
@@ -418,6 +423,7 @@
             <ul id="lista2" class="prof"></ul>
             <ul id="lista3" class="met"></ul>
             <ul id="lista4" class="op"></ul>
+            <button id="listo" class="btn-inc1" onclick="listo()" type="submit">Listo</button>
         </div>
         <script src="Alumno.js"></script>
     </body>

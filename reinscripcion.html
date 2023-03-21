@@ -10,10 +10,10 @@
     <body ><br><br><br>
         <center><img src="Logo.png" width="250" height="200"></center>
         <h1 style=" color:#861024; font-size:7" align="center" >REINSCRIPCIÓN</h1>
-        <center><a class="letra"> Matricula<br>
-            <input class="datos" id="matri"></a><br><br>
+        <center><a class="letra" > Matricula<br>
+            <input class="datos" id="mat" type="tel" minlength="8" maxlength="8"></a><br><br>
             <br><label class="letra" type="text">Elige tu cuatrimestre</label>
-      <br><select class="datos" id="cuatris1">
+      <br><select class="datos" id="cuatris">
         <option value="">cuatrimestre</option>
         <option value="2">Segundo cuatrimestre</option>
         <option value="3">Tercer cuatrimestre</option>
@@ -28,7 +28,7 @@
  
         <script src="Alumno.js"></script>
         <script>
-            const miSelect = document.getElementById('cuatris1');
+            const miSelect = document.getElementById('cuatris');
 
             miSelect.options[0].disabled = true;
         </script>

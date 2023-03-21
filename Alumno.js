@@ -17,7 +17,7 @@ function limpiarFormulario() {
   document.getElementById("formulario").reset();
 }
 
-let alumnos = [];
+
 function guardarAlumno() {
   const nombre = document.getElementById("nombre").value;
   const apellidos = document.getElementById("apellidos").value;
@@ -27,27 +27,23 @@ function guardarAlumno() {
   const telefono = document.getElementById("telefono").value;
   const direccion = document.getElementById("direccion").value;
   const tutor = document.getElementById("tutor").value;
+  const cuatri = "Primer cuatrimestre";
   
-  const cuatri = document.getElementById("cuatris").value;
-  
-  if(cuatri.value == true){
-    console.log(cuatri);
-  }
   const matricula = generarMatricula();
   
-
   const form = document.getElementById("formulario");
   const alumno002 = new Alumno(nombre, apellidos, correo, fecha_nacimiento, num_seg_social, telefono, direccion, tutor, matricula, cuatri);
   
+  let alumnos = JSON.parse(localStorage.getItem("Datos")) || [];
+
     const camposRequeridos = form.querySelectorAll("[required]");
     
     let hayCamposVacios = false;
 
     camposRequeridos.forEach(function(campo) {
       if (campo.value === "") {
-        if(cuatri.value === ""){
         hayCamposVacios = true;
-      }
+      
     }
   });
   
@@ -64,8 +60,9 @@ function guardarAlumno() {
 
       }
       else{
-      alumnos.push(alumno002);
-      localStorage.setItem("Datillos", JSON.stringify(alumnos));
+        alumnos.push(alumno002);
+
+        localStorage.setItem("Datos", JSON.stringify(alumnos));
       
       alert("El alumno ha sido guardado con éxito. Su matrícula es: " + matricula);
 
@@ -105,22 +102,27 @@ function generarMatricula() {
 function ost() {
 
   let dats_local= [];
-  let matriculs = document.getElementById("matri").value;
-  let alumnos_local = JSON.parse(localStorage.getItem("Datillos")) || [];
+  let matriculs = document.getElementById("mat").value;
+  let alumnos_local = JSON.parse(localStorage.getItem("Datos")) || [];
   console.log(alumnos_local);
   dats_local = alumnos_local;
 
   let arreglillo = dats_local.some(({ matricula}) => matricula === matriculs);
   console.log(arreglillo);
-  console.log(arreglillo1);
 
-  if (arreglillo === undefined) {
+    if (arreglillo === false) {
     alert("datos incorrectos");
   } else {
+      var select = document.getElementById("cuatris");
+      if (select.value === "") {
+        alert("Debes seleccionar un cuatrimestre");
+        return false;
+      }else{
     alert("datos correctos");
-    window.location.href="validación1.html";
-    }
 
+    window.location.href="validación1.html";
+    return true;
+      }
   }
 }
 
@@ -181,6 +183,12 @@ function guardarMateria() {
       });
 
   localStorage.setItem("seleccionados", JSON.stringify(seleccionados));
+  
+}
+
+function listo(){
+  alert("Tu inscripción se llevo a cavo con exito");
+  window.location.href="index.html"
 }
 
 function cargar() {

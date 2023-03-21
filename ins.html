@@ -36,27 +36,8 @@
       
       <br><label for="tutor" class="letra">Tutor:</label><br>
       <input class="dato" type="text" id="tutor" name="tutor" required><br>
+      <label id="cuatrimestre" value="Primer cuatrimestre"></label>
       
-      <br><label class="letra" type="text">Elige tu cuatrimestre</label>
-      <br><select class="dato" id="cuatris">
-        <option value="">cuatrimestre</option>
-        <option value="1">Primer cuatrimestre</option>
-        <option value="2">Segundo cuatrimestre</option>
-        <option value="3">Tercer cuatrimestre</option>
-        <option value="4">cuarto cuatrimestre</option>
-        <option value="5">Quinto cuatrimestre</option>
-        <option value="6">Sexto cuatrimestre</option>
-        <option value="7">Septimo cuatrimestre</option>
-        <option value="8">Octavo cuatrimestre</option>
-        <option value="9">Noveno cuatrimestre</option>
-      </select><br>
-      <script>
-        const miSelect = document.getElementById('cuatris');
-
-        miSelect.options[0].disabled = true;
-        
-
-      </script>
       <br><strong></strong><input class="btn-inc" style="color:white" type="button" value="Cancelar" onclick="limpiarFormulario()">
       <input class="btn-inc" style="color:white" type="submit" value="Guardar" onclick="guardarAlumno()"><br><br>
       <a href="index.html"><button class="ins">Regresar al inicio </button></a></div>
